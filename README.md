@@ -1,6 +1,6 @@
 # oracle-try
 
-## Sample - CREATE テーブル
+## CREATE テーブル - Sample
 ```
 CREATE TABLE KOKYAKU (
     "KOKYAKU_ID"   VARCHAR2(10) NOT NULL,
