@@ -55,7 +55,7 @@ create table membership (memberID number(5),
                          CONSTRAINT address FOREIGN KEY (address) REFERENCES address (addressID)
                         );
 ```
-# INSERT文
+## INSERT文
 * 参照元から順に 
 ```
 insert into address values(1000, '東京', 'A区', 'abc', '猫ビル');
