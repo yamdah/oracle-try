@@ -55,3 +55,26 @@ create table membership (memberID number(5),
                          CONSTRAINT address FOREIGN KEY (address) REFERENCES address (addressID)
                         );
 ```
+# INSERT文
+* 参照元から順に 
+```
+insert into address values(1000, '東京', 'A区', 'abc', '猫ビル');
+insert into address values(1001, '東京', 'A区', 'cde', '犬ビル');
+insert into address values(1002, '東京', 'A区', 'fgh', '馬マンション');
+insert into address values(1010, '東京', 'B区', 'xyz', '赤ビル');
+insert into address values(1011, '東京', 'B区', 'vwx', '青ビル');
+insert into address values(1020, '東京', 'C区', 'ac', '野球ビル');
+
+insert into membership values(10001, '田中太郎', 'abc123@email.com', 1002, 'Y');
+insert into membership values(10002, '坂本武', 'a33123@email.com', 1020, 'Y');
+insert into membership values(10003, '吉原次郎', 'bc2123@email.com', 1011, 'Y');
+insert into membership values(10004, '所沢健太', 'a11123@email.com', 1020, 'Y');
+insert into membership values(10005, '雨宮涼子', 'b33123@email.com', 1010, 'Y');
+insert into membership values(10006, '倉田真由美', 'c43123@email.com', 1002, 'Y');
+insert into membership values(10007, '久保田壮', 'add123@email.com', 1002, 'Y');
+insert into membership values(10008, '小池千佳', 'abd123@email.com', 1001, 'Y');
+insert into membership values(10009, 'Michael Jackson', 'fbc123@email.com', 1020, 'Y');
+insert into membership values(10010, '浜田洋平', 'abc124@email.com', 1011, 'Y');
+insert into membership values(10011, '山田三郎', 'abr211@email.com', 1002, 'Y');
+insert into membership values(10012, '近石康', 'abf323@email.com', 1001, 'Y');
+```
