@@ -7,7 +7,7 @@
 ```
 * INSERT （テーブル : sample）
 ```
-　INSERT INTO sample VALUE('田中');
+　INSERT INTO sample VALUES('田中');
 ```
 * UPDATE （テーブル : sample）
 ```
