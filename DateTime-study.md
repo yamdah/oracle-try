@@ -4,8 +4,11 @@
 * SQLDeveloperを使用
 
 ## テーブル準備
+* テーブル消去
+* テーブル作成
+* データ追加
 ```
-DROP TABLE t_date1;                                            <!-- テーブルのリセット -->
+DROP TABLE t_date1;
 
 CREATE TABLE t_date1 (date_id   NUMBER PRIMARY KEY,
                       date_str  VARCHAR2(100));
