@@ -20,14 +20,14 @@ INSERT into t_date1 VALUES (6, '2023/05/13');
 ```
 
 ## 年月日時コマンド
-* TO_DATEコマンド(文字リテラルからDATE型への書式指定変換)
+* TO_DATEコマンド(文字リテラル → DATE型　：　書式指定あり)
 * データの形式が書式と合致しない場合エラーが発生する
 ```
 SELECT TO_DATE(date_str, 'YYYY/MM/DD HH24:MI:SS') FROM t_date1 WHERE date_id < 6;
 SELECT TO_DATE(date_str, 'RR-MM-DD') FROM t_date1 WHERE date_id = 6;
 ```
 
-* TO_DATEコマンド(文字リテラルからDATE型への書式指定なし変換)
+* TO_DATEコマンド(文字リテラル → DATE型　：　書式指定なし)
 * デフォルト書式であるNLS_DATE_FORMATが使用される
 * NLS_DATE_FORMATはデータディクショナリービューのNLS_DATABASE_PARAMETERSから確認する
 ```
