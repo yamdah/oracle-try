@@ -27,3 +27,14 @@ SELECT TO_DATE(date_str, 'YYYY/MM/DD HH24:MI:SS') FROM t_date1 WHERE date_id < 6
 SELECT TO_DATE(date_str, 'RR-MM-DD') FROM t_date1 WHERE date_id = 6;
 ```
 
+* TO_DATEコマンド(文字リテラルからDATE型への書式指定なし変換)
+* デフォルト書式であるNLS_DATE_FORMATが使用される
+* NLS_DATE_FORMATはデータディクショナリービューのNLS_DATABASE_PARAMETERSから確認する
+```
+SELECT TO_DATE(date_str) FROM t_date1 WHERE date_id < 6;
+SELECT TO_DATE(date_str) FROM t_date1 WHERE date_id = 6;
+
+SELECT * FROM NLS_DATABASE_PARAMETERS;
+SELECT value FROM NLS_DATABASE_PARAMETERS WHERE parameter = 'NLS_DATE_FORMAT';
+```
+
