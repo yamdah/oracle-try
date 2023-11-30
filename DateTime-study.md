@@ -20,9 +20,10 @@ INSERT INTO t_date1 VALUES (4, '2023/12/24 21:40:16');
 INSERT INTO t_date1 VALUES (5, '2023/12/29 10:30:19');
 ```
 
-## 年月日時について
+## 年月日時コマンド
 * TO_DATEコマンド
-* 文字リテラルからの変換
+* 文字リテラルからの書式指定での変換
+* VARCHAR2の容量が足りないと自動的に書式はRR-MM-DDになる
 ```
 SELECT TO_DATE(date_str, 'YYYY/MM/DD HH24:MI:SS') FROM t_date1;
 ```
