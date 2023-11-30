@@ -5,7 +5,7 @@
 
 ## テーブル準備
 ```
-DROP TABLE t_date1;                                        <!-- テーブルのリセット -->
+DROP TABLE t_date1;                                            <!-- テーブルのリセット -->
 
 CREATE TABLE t_date1 (date_id   NUMBER PRIMARY KEY,
                       date_str  VARCHAR2(100));
